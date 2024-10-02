@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import EventForm from './components/EventForm';
 import EventList from './components/EventList';
+import './App.css';
 
 const App = () => {
   const [events, setEvents] = useState([]);
@@ -12,7 +13,7 @@ const App = () => {
 
   return (
     <Router>
-      <div>
+      <div className="app-container">
         <h1>Event Creation App</h1>
         <nav>
           <ul>
